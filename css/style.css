@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+main {
+  display: block;
+}
+
+i {
+  display: block;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+html {
+  width: 100%;
+  height: auto;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html body {
+  width: 100%;
+  height: auto;
+}
+html body main {
+  width: 100%;
+  height: auto;
+  padding-top: 125px;
+}
+html body main.innerPage .center .left {
+  display: none;
+}
+html body header {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+html body header .left {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body header .left .hamBtn {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
+html body header .left .hamBtn:hover span, html body header .left .hamBtn:active span, html body header .left .hamBtn.active span {
+  background: #111111;
+}
+html body header .left .hamBtn span {
+  width: 100%;
+  height: 6px;
+  display: block;
+  background: #ffd400;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+html body header .left .hamBtn span:nth-of-type(2) {
+  margin: 5px 0;
+}
+html body header .left .logo {
+  width: auto;
+  height: auto;
+  margin-left: 20px;
+}
+html body header .left .logo a {
+  width: 100%;
+  height: 100%;
+}
+html body header .left .logo a:hover p, html body header .left .logo a:active p, html body header .left .logo a.active p {
+  color: #111111;
+}
+html body header .left .logo a p {
+  color: #ffd400;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+html body header .right {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body header .right .member {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #111111;
+  border-radius: 50%;
+  margin-right: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+html body header .right .member:hover, html body header .right .member:active, html body header .right .member.active {
+  background: #ffd400;
+}
+html body header .right .member:hover i, html body header .right .member:active i, html body header .right .member.active i {
+  color: #111111;
+}
+html body header .right .member i {
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+html body header .right .searchBar {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+html body header .right .searchBar:hover, html body header .right .searchBar:active, html body header .right .searchBar.active {
+  width: 300px;
+}
+html body header .right .searchBar:hover input, html body header .right .searchBar:active input, html body header .right .searchBar.active input {
+  display: inline-block;
+}
+html body header .right .searchBar label {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #111111;
+  border-radius: 30px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+html body header .right .searchBar label input {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0 10px;
+}
+html body header .right .searchBar label input ::-webkit-input-placeholder {
+  color: #636363;
+}
+html body header .right .searchBar label input ::-moz-placeholder {
+  color: #636363;
+}
+html body header .right .searchBar label input :-ms-input-placeholder {
+  color: #636363;
+}
+html body header .right .searchBar label input ::-ms-input-placeholder {
+  color: #636363;
+}
+html body header .right .searchBar label input ::placeholder {
+  color: #636363;
+}
+html body header .right .searchBar label i {
+  color: #ffffff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+html body header .hamNav {
+  display: none;
+  width: 750px;
+  height: 100%;
+  min-height: 937px;
+  background: #111111;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  padding: 30px;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 100;
+}
+html body header .hamNav.display {
+  -webkit-transform: translateX(256%);
+          transform: translateX(256%);
+  display: block;
+}
+html body header .hamNav i {
+  color: #ffffff;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+}
+html body header .hamNav i:hover, html body header .hamNav i:active, html body header .hamNav i.active {
+  color: #ffd400;
+}
+html body header .hamNav ul {
+  width: 100%;
+  height: auto;
+  margin-top: 25%;
+}
+html body header .hamNav ul li {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+html body header .hamNav ul li a {
+  width: 100%;
+  height: auto;
+}
+html body header .hamNav ul li a:hover p, html body header .hamNav ul li a:active p, html body header .hamNav ul li a.active p {
+  color: #ffd400;
+}
+html body header .hamNav ul li a p {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+}
