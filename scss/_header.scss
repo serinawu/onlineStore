@@ -151,18 +151,17 @@ header {
         display: none;
         width: 750px;
         height: 100%;
-        min-height: 937px;
+        min-height: 990px;
         background: $mainBG_1;
         clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
         padding: 30px;
-        transition: transform 2s;
+        transition: all 2s;
         position: absolute;
         top: 0;
-        left: -100%;
+        left: 0;
         z-index: 100;
 
         &.display {
-            transform: translateX(256%);
             display: block;
         }
 

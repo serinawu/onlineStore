@@ -280,23 +280,19 @@ html body header .hamNav {
   display: none;
   width: 750px;
   height: 100%;
-  min-height: 937px;
+  min-height: 990px;
   background: #111111;
   -webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
   padding: 30px;
-  -webkit-transition: -webkit-transform 2s;
-  transition: -webkit-transform 2s;
-  transition: transform 2s;
-  transition: transform 2s, -webkit-transform 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
   position: absolute;
   top: 0;
-  left: -100%;
+  left: 0;
   z-index: 100;
 }
 html body header .hamNav.display {
-  -webkit-transform: translateX(256%);
-          transform: translateX(256%);
   display: block;
 }
 html body header .hamNav i {
