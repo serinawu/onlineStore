@@ -1,0 +1,53 @@
+.swiper {
+    width: 100%;
+    height: auto;
+
+    .swiper-wrapper {
+        width: 100%;
+        height: auto;
+
+       .swiper-slide {
+            width: 100%;
+            height: auto;
+
+            .adPic_1 {
+                width: 70%;
+                height: 585px;
+                display: flex;
+                flex-direction: column;
+                background: $mainBG_3;
+                padding: 80px;
+
+                p {
+                    color: $mainFont_5;
+
+                    &.title {
+                        font-size: 70px;
+                        font-weight: bold;
+                    }
+    
+                    &.info {
+                        font-size: 20px;
+                        margin: 40px 0;
+                    }
+                }
+
+                button {
+                    width: 120px;
+                    height: auto;
+                    background: $mainBG_2;
+                    color: $mainFont_1;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 10px 0;
+                    transition: all 0.3s;
+
+                    &:hover,&:active,&.active {
+                        background: $mainBG_1;
+                        color: $mainFont_2;
+                    }
+                }
+            }
+       }
+    }
+}

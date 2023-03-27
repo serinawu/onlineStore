@@ -6,11 +6,13 @@ html {
     body {
         width: 100%;
         height: auto;
+        @include scrollBar;
 
         main {
             width: 100%;
             height: auto;
             padding-top: 125px;
+            
 
             &.innerPage {
 
@@ -25,6 +27,7 @@ html {
 
         @import "./header";
         @import "./jumpWIndow";
+        @import "./banner";
         @import "./mainWrap";
         @import "./footer";
     }

@@ -101,6 +101,17 @@ html body {
   width: 100%;
   height: auto;
 }
+html body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+html body::-webkit-scrollbar-thumb {
+  background: #111111;
+  border-radius: 15px;
+}
+html body::-webkit-scrollbar-track {
+  background: transparent;
+}
 html body main {
   width: 100%;
   height: auto;
@@ -327,4 +338,98 @@ html body header .hamNav ul li a p {
   color: #ffffff;
   font-size: 2rem;
   font-weight: bold;
+}
+html body .swiper {
+  width: 100%;
+  height: auto;
+}
+html body .swiper .swiper-wrapper {
+  width: 100%;
+  height: auto;
+}
+html body .swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: auto;
+}
+html body .swiper .swiper-wrapper .swiper-slide .adPic_1 {
+  width: 70%;
+  height: 585px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #f7f8f8;
+  padding: 80px;
+}
+html body .swiper .swiper-wrapper .swiper-slide .adPic_1 p {
+  color: #4c4c4b;
+}
+html body .swiper .swiper-wrapper .swiper-slide .adPic_1 p.title {
+  font-size: 70px;
+  font-weight: bold;
+}
+html body .swiper .swiper-wrapper .swiper-slide .adPic_1 p.info {
+  font-size: 20px;
+  margin: 40px 0;
+}
+html body .swiper .swiper-wrapper .swiper-slide .adPic_1 button {
+  width: 120px;
+  height: auto;
+  background: #ffd400;
+  color: #111111;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+html body .swiper .swiper-wrapper .swiper-slide .adPic_1 button:hover, html body .swiper .swiper-wrapper .swiper-slide .adPic_1 button:active, html body .swiper .swiper-wrapper .swiper-slide .adPic_1 button.active {
+  background: #111111;
+  color: #ffffff;
+}
+html body .center {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+html body .center article {
+  width: 100%;
+  height: auto;
+}
+html body .center article.whatWeDo .worktype {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .center article.whatWeDo .worktype li {
+  width: 23%;
+  height: 215px;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5960784314), -1px -1px 6px rgba(0, 0, 0, 0.5960784314);
+          box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5960784314), -1px -1px 6px rgba(0, 0, 0, 0.5960784314);
+  padding: 15px;
+}
+html body .center article.whatWeDo .worktype li img {
+  width: 100%;
+}
+html body .center article .themeTitle {
+  color: #4c4c4b;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0 0 40px;
+}
+html body .center article .subTitle {
+  color: #4c4c4b;
+  font-size: 20px;
 }

@@ -17,7 +17,7 @@ $(function(){
     //Swiper
     var swiper = new Swiper('.swiper', {
         autoHeight: true,
-        loop: true,
+        loop: false,
         autoplay: {
             delay: 1500,
             disableOnInteraction: false,

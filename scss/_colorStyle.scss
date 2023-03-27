@@ -1,9 +1,31 @@
 //BG_Color
 $mainBG_1: #111111;
 $mainBG_2: #ffd400;
+$mainBG_3: #f7f8f8;
+$mainBG_4: #ffffff;
 
 //fontColor
 $mainFont_1: #111111;
 $mainFont_2: #ffffff;
 $mainFont_3: #ffd400;
 $mainFont_4: #636363;
+$mainFont_5: #4c4c4b;
+
+//box-shadow
+$box-shadow_1: #00000098;
+
+@mixin scrollBar {
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $mainBG_1;
+        border-radius: 15px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}
