@@ -2,35 +2,14 @@
     max-width: 1200px;
     height: auto;
     margin: 0 auto;
+    padding: 0 1.5em;
+    position: relative;
 
     article {
         width: 100%;
         height: auto;
-
-        &.whatWeDo {
-
-            .worktype {
-                width: 100%;
-                height: auto;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
-                li {
-                    width: 23%;
-                    height: 215px;
-                    background: $mainBG_4;
-                    box-shadow: 1px 1px 6px $box-shadow_1,
-                                -1px -1px 6px $box-shadow_1;
-                    padding: 15px;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-            }
-        }
-
+        margin-bottom: 90px;
+        
         .themeTitle {
             color: $mainFont_5;
             font-size: 50px;
@@ -42,6 +21,103 @@
             color: $mainFont_5;
             font-size: 20px;
             margin-bottom: 40px;
+        }
+
+        button {
+
+            &.more {
+                width: 150px;
+                height: 50px;
+                @include btnStyle_1;
+            }
+        }
+
+        &.whatWeDo {
+
+            .worktype {
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1em;
+
+                li {
+                    width: 100%;
+                    height: 215px;
+                    background: $mainBG_4;
+                    box-shadow: 1px 1px 6px $box-shadow_1,
+                                -1px -1px 6px $box-shadow_1;
+                    padding: 15px;
+
+                    img {
+                        width: 100%;
+                        height: 80%;
+                        background: $mainBG_2;
+                        object-fit: contain;
+                        margin-bottom: 1em;
+                    }
+                }
+
+                button {
+                    grid-column:  4;
+                    margin-left: 46%;
+                }
+            }
+        }
+
+        &.story {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            
+
+            .half {
+                width: 46%;
+                height: auto;
+                padding-top: 50px;
+
+                &:nth-of-type(1) {
+                    padding-left: 50px;
+
+                    img {
+                        width: 534px;
+                        height: 610px;
+                        object-fit: contain;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            background: $mainBG_4;
+                            box-shadow: 1px 1px 6px $box-shadow_1,
+                                -1px -1px 6px $box-shadow_1;
+                            position: absolute;
+                            top: -50px;
+                            left: -50px;
+                            z-index: -1;
+                        }
+                    }
+                }
+
+                .shortInfo {
+
+                    p {
+                        line-height: 1.7rem;
+                    }
+                }
+
+                button {
+                    margin-top: 50px;
+                }
+            }
+        }
+
+        &.price {
+            width: auto;
+            height: 765px;
+            background: $mainBG_3;
+            padding-left: 60%;
         }
     }
 }
